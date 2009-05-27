@@ -1,0 +1,15 @@
+# Lines starting with '#' are considered comments.
+# Ignore objects and archives.
+*.[oa]
+*.la
+*.lo
+.deps
+*.libs
+*~
+config.log
+config.status
+config/config
+config/system.mak
+include/flite_version.h
+bin
+build
