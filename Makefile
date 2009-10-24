@@ -109,7 +109,7 @@ install:
 	mkdir -p $(INSTALLLIBDIR)
 	mkdir -p $(INSTALLINCDIR)
 	$(INSTALL) -m 644 include/*.h $(INSTALLINCDIR)
-	@ $(MAKE) -C lib --no-print-directory install
+	$(INSTALL) -m 644 $(LIBDIR)/* $(INSTALLLIBDIR)
 	$(INSTALL) -m 755 bin/flite $(INSTALLBINDIR)
 	$(INSTALL) -m 755 bin/flite_time $(INSTALLBINDIR)
 
